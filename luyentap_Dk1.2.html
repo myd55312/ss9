@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap Dk1.2</title>
+</head>
+<body>
+<input id="number" placeholder="Nhập tuổi">
+<button onclick="check()">Kiểm tra</button>
+<script>
+  function check() {
+    let inputNumber = document.getElementById("number");
+    let number = parseInt(inputNumber.value);
+    if (number<15){
+      alert("Không đủ tuổi học lớp 10")
+    }else{
+      alert("Đủ tuổi học lớp 10")
+    }
+  }
+</script>
+</body>
+</html>
