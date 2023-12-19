@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number" placeholder="Nhập vào đây">
+<button onclick="check()">Kiểm tra</button>
+<script>
+    function check () {
+        let inputNumber = document.getElementById("number")
+        let number = parseInt(inputNumber.value);
+        if ( number > 0) {
+            alert("Số này lớn hơn 0");
+        } else {
+            alert("Số này bé hơn 0");
+        }
+    }
+</script>
+</body>
+</html>
