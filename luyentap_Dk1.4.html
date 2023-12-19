@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number1" placeholder="nhập a">
+<input id="number2" placeholder="nhập b">
+<input id="number3" placeholder="nhập c">
+<button onclick="check ()">Kiểm tra</button>
+<script>
+    function check (){
+        let inputNumber1 = document.getElementById("number1");
+        let inputNumber2 = document.getElementById("number2");
+        let inputNumber3 = document.getElementById("number3");
+        let a = parseInt(inputNumber1.value);
+        let b = parseInt(inputNumber2.value);
+        let c = parseInt(inputNumber3.value);
+        if (a>b && a>c){
+            alert("a là số lớn nhất")
+        } else if (b>c && b>a){
+            alert("b là số lớn nhất")
+        } else {
+            alert("c là số lớn nhất")
+        }
+    }
+</script>
+
+</body>
+</html>
