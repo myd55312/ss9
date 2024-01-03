@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dd/mm/yy</title>
+</head>
+<body>
+<!--Nhập vào số tháng và hiển thị xem tháng đó có bao nhiêu ngày.-->
+<input id="number" placeholder="Nhập vào số tháng">
+<button onclick="check()">Kiểm tra</button>
+<script>
+    function check() {
+        let inputNumber = document.getElementById("number");
+        let a = parseInt(inputNumber.value);
+        if (a<=1 || a<=12){
+            switch(a)
+            {
+                case 1 : case 3 : case 5 : case 7 : case 8 : case 10 : case 12:
+                    alert ("Thang"+ a +"co 31 ngay") ;
+                    break;
+                case 4 : case 6 : case 9 : case 11:
+                    alert ("Thang" + a + "co 30 ngay");
+                    break;
+                case 2 :
+                    alert("Thang" + a +"co 28 ngay");
+                    break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
